@@ -20,7 +20,7 @@
 	<title>대한전기</title>
 
 	<!-- Standard Favicon -->
-	<link rel="icon" type="image/x-icon" href="resources/images//favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="resources/images/favicon.ico" />
 	
 	<!-- For iPhone 4 Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/images//apple-touch-icon-114x114-precomposed.png">
@@ -60,26 +60,16 @@
 				<!-- Container -->
 				<div class="container">
 					<ul class="contact">
-						<li><a href="tel:(+1)123-456-7890" title="(+1) 123 - 456 - 7890"><i class="fa fa-phone" aria-hidden="true"></i><span>Phone :</span> (+1) 123 - 456 - 7890</a></li>
-						<li><a href="mailto:Info@Ourdomain.Com" title="Info@Ourdomain.Com"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email :</span> Info@Ourdomain.Com</a></li>
+						<li><a href="#" title="(033)764 - 9874"><i class="fa fa-phone" aria-hidden="true"></i><span>Phone :</span> (033) 764 - 9876</a></li>
+						<li><a href="#" title="deahan_electronic@naver.com"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email :</span> deahan_electronic@naver.com</a></li>
 					</ul>
-					<div class="dropdown-bar">
-						<div class="language-dropdown dropdown">
-							<label>Currency :</label>
-							<button class="btn dropdown-toggle" type="button" id="currency" title="currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">USD<span class="caret"></span></button>
-							<ul class="dropdown-menu no-padding">
-								<li><a href="#" title="Usd">Usd</a></li>
-								<li><a href="#" title="Ora">Ora</a></li>
-								<li><a href="#" title="Riyal">Riyal</a></li>
-							</ul>
-						</div>
+						<!-- 계정 로그인 -->
 						<div class="language-dropdown dropdown">
 							<button class="btn dropdown-toggle" type="button" id="Username" title="Username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My Account<span class="caret"></span></button>
-							<ul class="dropdown-menu no-padding">
-								<li><a href="#" title="sarah1">sarah1</a></li>
-								<li><a href="#" title="sarah2">sarah2</a></li>
-								<li><a href="#" title="sarah3">sarah2</a></li>
-							</ul>
+								<!-- <ul>
+									<li>로그인</li>
+									<li>회원가입</li>
+								</ul> -->
 						</div>
 					</div>
 				</div><!-- Container /- -->
@@ -91,28 +81,20 @@
 					<div class="row">
 						<div class="col-md-5 col-sm-4 col-xs-4">
 							<div class="logo-block">
-								<a href="index.html"><img src="resources/images/logo-1.png" alt="logo" height="38" width="56"/>Furn<span>Home</span></a>
+								<a href="#"><img src="resources/images/logo.png" alt="logo" height="38" width="56"/>대한전기</a>
 							</div>
 						</div>
-						<div class="header-info">
+						<!-- <div class="header-info" >
 							<div class="col-md-5 col-sm-6 col-xs-6">
 								<div class="input-group">
-									<div class="input-group-btn">
-										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></button>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-										</ul>
-									</div><!-- /btn-group -->
-									<input type="text" placeholder="Search..." class="form-control">
+									<input type="text" placeholder="상품 이름을 검색하세요" class="form-control">
 									<span class="input-group-btn">
 										<button type="button" title="Search" class="btn btn-search"><i class="fa fa-search"></i></button>
 									</span>
-								</div><!-- /input-group -->
+								</div>/input-group
 							</div>
-						</div>
-						<div class="col-md-2 col-sm-2 col-xs-2 add-to-cart">
+						</div> -->
+						<!-- <div class="col-md-2 col-sm-2 col-xs-2 add-to-cart">
 							<ul class="cart">
 								<li>
 									<a aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="cart" class="btn dropdown-toggle" title="Add To Cart" href="#">
@@ -142,7 +124,7 @@
 									</ul>
 								</li>
 							</ul>
-						</div>
+						</div> -->
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Middel Header /- -->	
@@ -166,51 +148,45 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="text-logo desktop-hide" href="index.html"><span>Furn</span>Home</a>
+						<a class="text-logo desktop-hide" href="${companyIntro}">대한전기</a>
 					</div>
 					<div class="navbar-collapse collapse navbar-right" id="navbar">
+					<!-- url start -->
+					<c:url var="companyIntro" value="companyIntro.do"/>
+					<c:url var="memberIntro" value="memberIntro.do"/>
+					<c:url var="shopFloor" value="shopFloor.do"/>
+					<c:url var="reference" value="reference.do"/>
+					<c:url var="product" value="product.do"/>
+					<c:url var="location" value="location.do"/>
+					<!-- url end -->
 						<ul class="nav navbar-nav menubar">
 							<li class="dropdown active">
-								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Home" href="index.html">Home</a>
+								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="company" href="${companyIntro}">대한전기</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
-									<li><a title="Home 2" href="index-2.html">Home 2</a></li>
+									<li><a title="companyIntro" href="${companyIntro}">회사소개</a></li>
+									<li><a title="memberIntro" href="${memberIntro}">임직원소개</a></li>
+								</ul>
+							</li>
+							<li><a title="shopFloor" href="${shopFloor}">매장 둘러보기</a></li>
+							<li class="dropdown">
+								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="reference" href="${reference}">시공사례</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">
+									<li><a title="dec19" href="shop-2.html">2019.12.</a></li>
+									<li><a title="jan20" href="shop-2.html">2020.01.</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Home" href="shop.html">Living Room</a>
+								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="best seller" href="${product}">판매상품</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
-									<li><a title="Shop 1" href="shop-1.html">Shop 1</a></li>
+									<li><a title="light" href="${product}">조명</a></li>
+									<li><a title="material" href="${product}">전기자재</a></li>
+									<li><a title="etc" href="${product}">기타</a></li>
 								</ul>
 							</li>
-							<li class="dropdown">
-								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Home" href="shop-2.html">Bed Room</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-								<ul class="dropdown-menu">
-									<li><a title="Shop 2" href="shop-2.html">Shop 2</a></li>
-								</ul>
-							</li>
-							<li><a title="Sofas" href="#saleup-section">Sofas</a></li>
-							<li><a title="Latest Product" href="#latest-product">Latest Product</a></li>
-							<li class="dropdown">
-								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="best seller" href="shop.html">best seller</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-								<ul class="dropdown-menu">
-									<li><a title="product-detail" href="product-detail.html">product Detail</a></li>
-									<li><a title="Cart" href="cart.html">Cart</a></li>
-									<li><a title="Checkout" href="checkout.html">Checkout</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Latest News" href="#latest-blog">Latest News</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-								<ul class="dropdown-menu">
-									<li><a title="Blog" href="blog.html">Blog</a></li>
-									<li><a title="Blog Post" href="blog-post.html">Blog Post</a></li>
-								</ul>
-							</li>
-							<li><a title="Contact Us" href="contact-us.html">Contact Us</a></li>
+							<li><a title="location" href="${location}">오시는 길</a></li>
 						</ul>
 					</div>
 				</nav><!-- Navigation /- -->
