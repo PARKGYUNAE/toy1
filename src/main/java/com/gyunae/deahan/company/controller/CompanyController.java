@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CompanyController {
 
 	// 회사 소개
-	@RequestMapping("companyIntro.do")
+	@RequestMapping("companyIntro")
 	public String companyIntro() {
+		System.out.println("회사소개 컨트롤러");
 		return "companyIntro";
 	}
 	
 	// 임직원 소개
-	@RequestMapping("memberIntro.do")
+	@RequestMapping("memberIntro")
 	public String memberIntro() {
 		return "memberIntro";
 	}

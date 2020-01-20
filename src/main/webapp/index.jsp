@@ -17,20 +17,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>대한전기</title>
+	<title>대한전기조명</title>
 
-	<!-- Standard Favicon -->
-	<link rel="icon" type="image/x-icon" href="resources/images/favicon.ico" />
-	
-	<!-- For iPhone 4 Retina display: -->
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/images//apple-touch-icon-114x114-precomposed.png">
-	
-	<!-- For iPad: -->
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/images//apple-touch-icon-72x72-precomposed.png">
-	
-	<!-- For iPhone: -->
-	<link rel="apple-touch-icon-precomposed" href="resources/images//apple-touch-icon-57x57-precomposed.png">	
-	
 	<!-- Custom - Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="resources/style.css">
 	
@@ -65,7 +53,7 @@
 					</ul>
 						<!-- 계정 로그인 -->
 						<div class="language-dropdown dropdown">
-							<button class="btn dropdown-toggle" type="button" id="Username" title="Username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My Account<span class="caret"></span></button>
+							<button class="btn dropdown-toggle" type="button" id="Username" title="Username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">내 계정<span class="caret"></span></button>
 								<!-- <ul>
 									<li>로그인</li>
 									<li>회원가입</li>
@@ -75,59 +63,18 @@
 				</div><!-- Container /- -->
 			</div><!-- Top Header /- -->
 			
-			<!-- Middel Header -->
+			<!-- Middle Header -->
 			<div class="middle-header container-fluid no-padding">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5 col-sm-4 col-xs-4">
 							<div class="logo-block">
-								<a href="#"><img src="resources/images/logo.png" alt="logo" height="38" width="56"/>대한전기</a>
+								<a href="#"><img src="resources/images/logo.png" alt="logo" height="38" width="56"/>대한전기조명</a>
 							</div>
 						</div>
-						<!-- <div class="header-info" >
-							<div class="col-md-5 col-sm-6 col-xs-6">
-								<div class="input-group">
-									<input type="text" placeholder="상품 이름을 검색하세요" class="form-control">
-									<span class="input-group-btn">
-										<button type="button" title="Search" class="btn btn-search"><i class="fa fa-search"></i></button>
-									</span>
-								</div>/input-group
-							</div>
-						</div> -->
-						<!-- <div class="col-md-2 col-sm-2 col-xs-2 add-to-cart">
-							<ul class="cart">
-								<li>
-									<a aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="cart" class="btn dropdown-toggle" title="Add To Cart" href="#">
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-										<h3>Shopping Cart</h3>
-										<h5>(02) Items - <span>$200.00</span></h5>
-									</a>
-									<ul class="dropdown-menu no-padding">
-										<li class="mini_cart_item">
-											<a title="Remove this item" class="remove" href="#">&#215;</a>
-											<a href="#" class="shop-thumbnail">
-												<img width="60" height="60" alt="poster_2_up" class="attachment-shop_thumbnail" src="resources/images/product-wishlist-1.jpg" />Flying Ninja
-											</a>
-											<span class="quantity">2 &#215; <span class="amount">Rs.12.00</span></span>
-										</li>
-										<li class="mini_cart_item">
-											<a title="Remove this item" class="remove" href="#">&#215;</a>
-											<a href="#" class="shop-thumbnail">
-												<img width="60" height="60" alt="poster_2_up" class="attachment-shop_thumbnail" src="resources/images/product-wishlist-2.jpg" />Flying Ninja
-											</a>
-											<span class="quantity">2 &#215; <span class="amount">Rs.12.00</span></span>
-										</li>
-										<li class="button">
-											<a href="#" title="View Cart">View Cart</a>
-											<a href="#" title="Check Out">Check out</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div> -->
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
-			</div><!-- Middel Header /- -->	
+			</div><!-- Middle Header /- -->	
 		</div>		
 		
 		<!-- Menu Block -->
@@ -148,20 +95,20 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="text-logo desktop-hide" href="${companyIntro}">대한전기</a>
+						<a class="text-logo desktop-hide" href="${companyIntro}">대한전기조명</a>
 					</div>
 					<div class="navbar-collapse collapse navbar-right" id="navbar">
 					<!-- url start -->
-					<c:url var="companyIntro" value="companyIntro.do"/>
-					<c:url var="memberIntro" value="memberIntro.do"/>
-					<c:url var="shopFloor" value="shopFloor.do"/>
-					<c:url var="reference" value="reference.do"/>
-					<c:url var="product" value="product.do"/>
-					<c:url var="location" value="location.do"/>
+					<c:url var="companyIntro" value="companyIntro"/>
+					<c:url var="memberIntro" value="memberIntro"/>
+					<c:url var="shopFloor" value="shopFloor"/>
+					<c:url var="reference" value="reference"/>
+					<c:url var="product" value="product"/>
+					<c:url var="location" value="location"/>
 					<!-- url end -->
 						<ul class="nav navbar-nav menubar">
 							<li class="dropdown active">
-								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="company" href="${companyIntro}">대한전기</a>
+								<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="company" href="${companyIntro}">대한전기조명</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
 									<li><a title="companyIntro" href="${companyIntro}">회사소개</a></li>

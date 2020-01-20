@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProductController {
 
 	// 상품 메인 페이지 연결
-	@RequestMapping("product.do")
+	@RequestMapping("product")
 	public String productMain() {
 		return "productMain";
 	}
 	
 	// 상품 상세 페이지 연결
-	@RequestMapping("productDetail.do")
+	@RequestMapping("productDetail")
 	public String productDetail() {
 		return "productDetail";
 	}

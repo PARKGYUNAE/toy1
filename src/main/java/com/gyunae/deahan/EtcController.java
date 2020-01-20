@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class EtcController {
 
 	// 매장 둘러보기
-	@RequestMapping("shopFloor.do")
+	@RequestMapping("shopFloor")
 	public String shopFloor() {
 		return "shopFloor";
 	}
 
 	// 오시는 길
-	@RequestMapping("location.do")
+	@RequestMapping("location")
 	public String location() {
 		return "location";
 	}
